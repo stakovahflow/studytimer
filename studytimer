@@ -56,11 +56,11 @@ user_secondB=StringVar()
 soundCheck=IntVar()
 
 study_hour="00"
-study_minute="00"
-study_second="07"
+study_minute="15"
+study_second="00"
 break_hour="00"
-break_minute="00"
-break_second="05"
+break_minute="05"
+break_second="00"
 
 logging.debug('Setting study_hour, study_minute, study_second, break_hour, break_minute, break_second as follows: %s, %s, %s, %s, %s, %s', study_hour, study_minute, study_second, break_hour, break_minute, break_second)
 
