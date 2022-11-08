@@ -1,30 +1,34 @@
 #!/usr/bin/env python3
+import sys
 import threading
 import logging
 import datetime
 from datetime import datetime
+refreshTime=1
 
+appname = sys.argv[0]
+
+logFileName = appname+'.log'
 log_format = ('[%(asctime)s] %(levelname)-8s %(name)-12s %(message)s')
 # Output timestamp, as the default format string does not include it
-logging.basicConfig(filename='studyclock.log', format=log_format, encoding='utf-8', level=logging.DEBUG)
+logging.basicConfig(filename=logFileName, format=log_format, encoding='utf-8', level=logging.DEBUG)
 
 d=True
 logging.debug("#####################")
 logging.debug('Debugging is on')
-	
+
 import time
-from random import randint
 from tkinter import *
 import tkinter as tk
 from tkinter import messagebox
 from playsound import playsound
-soundFile = './bang.wav'
-logging.debug('soundFile: %s', soundFile)
+from threading import Thread
+
 i = 1
 rockOn=True
 what = ""
 winderName = "Study Timer"
-winderSize = "310x200"
+winderSize = "310x240"
 
 logging.debug('rockOn: %s', rockOn)
 
@@ -49,15 +53,27 @@ user_secondA=StringVar()
 user_hourB=StringVar()
 user_minuteB=StringVar()
 user_secondB=StringVar()
+soundCheck=IntVar()
 
 study_hour="00"
-study_minute="15"
-study_second="00"
+study_minute="00"
+study_second="07"
 break_hour="00"
-break_minute="05"
-break_second="00"
+break_minute="00"
+break_second="05"
 
 logging.debug('Setting study_hour, study_minute, study_second, break_hour, break_minute, break_second as follows: %s, %s, %s, %s, %s, %s', study_hour, study_minute, study_second, break_hour, break_minute, break_second)
+
+soundFile = 'bang.wav'
+logging.debug('setting soundFile: %s', soundFile)
+
+def audible(soundFile):
+	s=int(soundCheck.get())
+	logging.debug("Checking our soundCheck variable")
+	if (s == 1):
+		logging.debug('soundCheck is ON')
+		playsound(soundFile, block=False)
+		logging.debug('Should have heard play %s' % soundFile)
 
 def reset_defaults():
 	global rockOn
@@ -74,17 +90,18 @@ logging.debug('Initializing application defaults (as defined above)')
 reset_defaults()
 
 def studyTimer(buttonText):
-	if(d==True):
-		print("studyTimer(buttonText)")
+	logging.debug("studyTimer(buttonText)")
 	try:
+		logging.debug("Attempting to retrieve user_input for study timer")
 		# store the user input
 		user_input = int(user_hourA.get())*3600 + int(user_minuteA.get())*60 + int(user_secondA.get())
+		logging.debug("user input: " % user_input)
 	except:
-		messagebox.showwarning('', 'Invalid Input to studyTimer!')
-	while user_input >-1:
+		if (user_input == 0):
+			messagebox.showinfo("Error", "studyTimer")
+	while user_input > -1:
 		if (rockOn == True):
-			if(d==True):
-				print("studyTimer() loop: %s" % user_input)
+			logging.debug("studyTimer() loop: %s" % user_input)
 			# divmod(firstvalue = user_input//60, secondvalue = user_input%60)
 			mins,secs = divmod(user_input,60)
 			# Converting the input entered in mins or secs to hours,
@@ -98,10 +115,9 @@ def studyTimer(buttonText):
 			user_secondA.set("{0:02d}".format(secs))
 			# updating the GUI window 
 			winder.update()
-			time.sleep(1)
-			# if user_input value = 0, then a messagebox pop's up
-			# with a message
-			if (user_input == 0):
+			time.sleep(refreshTime)
+			if user_input == 1:
+				audible(soundFile)
 				messagebox.showinfo(buttonText, buttonText)
 			# decresing the value of temp 
 			# after every one sec by one
@@ -111,17 +127,18 @@ def studyTimer(buttonText):
 			break
 
 def breakTimer(buttonText):
-	logging.debug('breakTimer(buttonText)')
+	logging.debug("breakTimer(buttonText)")
 	try:
+		logging.debug("Attempting to retrieve user_input for break timer")
 		# store the user input
 		user_input = int(user_hourB.get())*3600 + int(user_minuteB.get())*60 + int(user_secondB.get())
-		print("user input: ", user_input)
+		logging.debug("user input: " % user_input)
 	except:
-		messagebox.showwarning('', 'Invalid Input to breakTimer!')
-	while user_input >-1:
+		if (user_input == 0):
+			messagebox.showinfo("Error", "breakTimer")
+	while user_input > -1 :
 		if (rockOn == True):
-			if(d==True):
-				print("breakTimer() loop: %s" % user_input)
+			logging.debug("breakTimer() loop: %s" % user_input)
 			# divmod(firstvalue = user_input//60, secondvalue = user_input%60)
 			mins,secs = divmod(user_input,60)
 			# Converting the input entered in mins or secs to hours,
@@ -135,10 +152,9 @@ def breakTimer(buttonText):
 			user_secondB.set("{0:02d}".format(secs))
 			# updating the GUI window 
 			winder.update()
-			time.sleep(1)
-			# if user_input value = 0, then a messagebox pop's up
-			# with a message
-			if (user_input == 0):
+			time.sleep(refreshTime)
+			if user_input == 1:
+				audible(soundFile)
 				messagebox.showinfo(buttonText, buttonText)
 			# decresing the value of temp 
 			# after every one sec by one
@@ -147,100 +163,87 @@ def breakTimer(buttonText):
 			user_input = 0
 			break
 
-def breaker():
-	logging.debug('...')
-	global rockOn
-	rockOn = True
-	if(d==True):
-		print("In breaker()")
-	try:
-		if(d==True):
-			print("In breaker()- try:")
-		print("Break time!")
-		buttonText="Break Over!"
-		what="break"
-		if(d==True):
-			print("Attempting: breakTimer(buttonText)")
-		breakTimer(buttonText)
-	except:
-		print("breaker() is not functioning correctly")
-		if(d==True):
-			print("In breaker()- except:")
-
 def studier():
-	logging.debug('...')
+	logging.debug('Study, study, now...')
 	global rockOn
 	rockOn = True
 	try:
-		if(d==True):
-			print("In studier()- try:")
-		print("Study time!")
+		logging.debug("In studier()- try:")
+		logging.info("Study time!")
 		buttonText="Study Over!"
 		what="study"
-		if(d==True):
-			print("Attempting: studyTimer(buttonText)")
+		logging.debug("Attempting: studyTimer(buttonText)")
 		studyTimer(buttonText)
 	except:
-		print("studier() is not functioning correctly")
-		if(d==True):
-			print("In studier()- except:")
+		logging.debug("studier() is not functioning correctly")
 
-def get_loopy():
-	logging.debug('...')
+def breaker():
+	logging.debug('Breaker, breaker!')
 	global rockOn
 	rockOn = True
-	if(d==True):
-		print("Attempting to retrieve user input")
 	try:
-		userAh = user_hourA.get()
-		userAm = user_minuteA.get()
-		userAs = user_secondA.get()
-		userBh = user_hourB.get()
-		userBm = user_minuteB.get()
-		userBs = user_secondB.get()
-		if(d==True):
-			print("Received the following user-defined values:")
-			print("Study Hours:", userAh)
-			print("Study Minutes:", userAm)
-			print("Study Seconds:", userAs)
-			print("Break Hours:", userBh)
-			print("Break Minutes:", userBm)
-			print("Break Seconds:", userBs)
+		logging.debug("In breaker()- try:")
+		logging.info("Break time!")
+		buttonText="Break Over!"
+		what="break"
+		logging.debug("Attempting: breakTimer(buttonText)")
+		breakTimer(buttonText)
+	except:
+		logging.debug("breaker() is not functioning correctly")
+
+def get_loopy():
+	i = 0
+	logging.debug('Loop mode ON')
+	global rockOn
+	soundCheck.get()
+	rockOn = True
+	logging.debug("Attempting to retrieve user input")
+	try:
+		userAh = int(user_hourA.get())
+		userAm = int(user_minuteA.get())
+		userAs = int(user_secondA.get())
+		userBh = int(user_hourB.get())
+		userBm = int(user_minuteB.get())
+		userBs = int(user_secondB.get())
+		logging.debug("Received the following user-defined values:")
+		logging.debug("Study Hours: \t%s", userAh)
+		logging.debug("Study Minutes: \t%s", userAm)
+		logging.debug("Study Seconds: \t%s", userAs)
+		logging.debug("Break Hours: \t%s", userBh)
+		logging.debug("Break Minutes: \t%s", userBm)
+		logging.debug("Break Seconds: \t%s", userBs)
+		while (rockOn == True):
+			if (i % 2 == 0):
+				user_hourA.set(userAh)
+				user_minuteA.set(userAm)
+				user_secondA.set(userAs)
+				studier()
+			else:
+				user_hourB.set(userBh)
+				user_minuteB.set(userBm)
+				user_secondB.set(userBs)
+				breaker()
+			i += 1
 	except:
 		print("Unable to retrieve user input.")
-	i = 0
-	if (rockOn == True):
-		if (i % 2 == 0):
-			user_hourA.set(userAh)
-			user_minuteA.set(userAm)
-			user_secondA.set(userAs)
-			studier()
-		else:
-			user_hourB.set(userBh)
-			user_minuteB.set(userBm)
-			user_secondB.set(userBs)
-			breaker()
-		i += 1
-		currentTime = datetime.now().strftime('%Y-%m-%d %H:%M')
-		#playsound('/home/superuser/Timer/bang.wav')
-		print('\r', what, "time! (",currentTime,")")
+
 
 def convert(conversion):
-	logging.debug('...')
+	logging.debug('Converting data: %s' % conversion)
 	s = conversion % (24 * 3600)
 	h = conversion // 3600
 	s %= 3600
 	m = conversion // 60
 	s %= 60
-	print("%d:%02d:%02d" % (h, m, s))
+	print("%02d:%02d:%02d" % (h, m, s))
 
 def exit_loopy():
-	logging.debug('...')
+	logging.debug('Quitting loop mode')
 	global rockOn
 	rockOn = False
 
 def quitter():
-	logging.debug('...')
+	logging.debug('Quitting the application')
 	global rockOn
 	rockOn = False
 	exit(0)
@@ -267,24 +270,26 @@ def update():
 #######################################################################
 logging.debug("Let's do this!")
 
-if(d==True):
-	print("Attempting to setup our gumdrop buttons")
+logging.debug("Add our sound checkbox:")
+soundCheckBox = Checkbutton(winder, text = "Enable Audible Alert", variable=soundCheck, onvalue=1, offvalue=0, height=1, width=21)
+soundCheckBox.place(x=20,y=100)
+
+logging.debug("Attempting to setup our grey buttons")
 
 get_loopy_button = Button(winder, bg='grey', text='Loop', command=get_loopy)
-get_loopy_button.place(x=20,y=100, width=80)
+get_loopy_button.place(x=20,y=140, width=80)
 reset_button = Button(winder, bg='grey', text='Reset', command=reset_defaults)
-reset_button.place(x=110,y=100, width=80)
+reset_button.place(x=110,y=140, width=80)
 kill_button = Button(winder, bg='grey', text='Cancel', command=exit_loopy)
-kill_button.place(x=200,y=100, width=80)
+kill_button.place(x=200,y=140, width=80)
 
-if(d==True):
-	print("Attempting to setup our gumdrop buttons")
+logging.debug("Attempting to setup our gumdrop buttons")
 study_button = Button(winder, bg='green', text='Study', command=studier)
-study_button.place(x=20,y=140, width=80)
+study_button.place(x=20,y=180, width=80)
 break_button = Button(winder, bg='yellow', text='Break', command=breaker)
-break_button.place(x=110,y=140, width=80)
+break_button.place(x=110,y=180, width=80)
 exit_button = Button(winder, bg='red', text='Exit', command=quitter)
-exit_button.place(x=200,y=140, width=80)
+exit_button.place(x=200,y=180, width=80)
 
 # run first time
 update()
