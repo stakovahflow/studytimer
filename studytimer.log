@@ -3,3 +3,5 @@
 [2023-03-11 15:47:37,761] DEBUG    root         rockOn: True
 [2023-03-11 15:47:38,079] DEBUG    root         Define window geometry: 310x240
 [2023-03-11 15:47:38,079] DEBUG    root         Defining window title as Study Timer
+[2023-05-09 21:11:59,725] DEBUG    root         #####################
+[2023-05-09 21:11:59,725] DEBUG    root         Debugging is on
