@@ -9,7 +9,7 @@ from datetime import datetime
 from pathlib import Path
 refreshTime=1
 appName = sys.argv[0]
-appPath = os.getcwd()
+appPath = str(os.getcwd())
 
 #print (Path.home())
 #print(os.path.realpath(appName))
@@ -20,7 +20,7 @@ logFileName = appName+'.log'
 #print(logFileName)
 
 # soundFile and application should live in $HOME/bin (~/bin):
-soundFile = ('%s/bin/bang.wav' % Path.home())
+soundFile = ('%s/bin/bang.wav' % appPath)
 
 log_format = ('[%(asctime)s] %(levelname)-8s %(name)-12s %(message)s')
 # Output timestamp, as the default format string does not include it
