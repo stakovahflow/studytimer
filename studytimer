@@ -7,20 +7,22 @@ import logging
 import datetime
 from datetime import datetime
 from pathlib import Path
+import time
+from tkinter import *
+import tkinter as tk
+from tkinter import messagebox
+from playsound import playsound
+from threading import Thread
+import simpleaudio as sa
+
 refreshTime=1
 appName = sys.argv[0]
 appPath = str(os.getcwd())
 
-#print (Path.home())
-#print(os.path.realpath(appName))
-#exit(0)
-
+# soundFile and application should live in $HOME/bin (~/bin):
+soundFile = str('bang.wav')
 
 logFileName = appName+'.log'
-#print(logFileName)
-
-# soundFile and application should live in $HOME/bin (~/bin):
-soundFile = ('%s/bin/bang.wav' % appPath)
 
 log_format = ('[%(asctime)s] %(levelname)-8s %(name)-12s %(message)s')
 # Output timestamp, as the default format string does not include it
@@ -29,13 +31,6 @@ logging.basicConfig(filename=logFileName, format=log_format, encoding='utf-8', l
 d=True
 logging.debug("#####################")
 logging.debug('Debugging is on')
-
-import time
-from tkinter import *
-import tkinter as tk
-from tkinter import messagebox
-from playsound import playsound
-from threading import Thread
 
 i = 1
 rockOn=True
@@ -83,7 +78,9 @@ def audible(soundFile):
 	logging.debug("Checking our soundCheck variable")
 	if (s == 1):
 		logging.debug('soundCheck is ON')
-		playsound(soundFile, block=False)
+		wave_obj = sa.WaveObject.from_wave_file(soundFile)
+		play_obj = wave_obj.play()
+		play_obj.wait_done()
 		logging.debug('Should have heard play %s' % soundFile)
 
 def reset_defaults():

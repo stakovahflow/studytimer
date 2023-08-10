@@ -1,0 +1,723 @@
+[2023-06-07 21:01:40,992] DEBUG    root         #####################
+[2023-06-07 21:01:40,992] DEBUG    root         Debugging is on
+[2023-06-07 21:01:41,002] WARNING  playsound    playsound is relying on a python 2 subprocess. Please use `pip3 install PyObjC` if you want playsound to run more efficiently.
+[2023-06-07 21:01:41,002] DEBUG    root         rockOn: True
+[2023-06-07 21:01:41,153] DEBUG    root         Define window geometry: 310x240
+[2023-06-07 21:01:41,153] DEBUG    root         Defining window title as Study Timer
+[2023-06-07 21:01:41,153] DEBUG    root         Setting study_hour, study_minute, study_second, break_hour, break_minute, break_second as follows: 00, 15, 00, 00, 05, 00
+[2023-06-07 21:01:41,153] DEBUG    root         Initializing application defaults (as defined above)
+[2023-06-07 21:01:41,153] DEBUG    root         Resetting default values
+[2023-06-07 21:01:41,153] DEBUG    root         Let's do this!
+[2023-06-07 21:01:41,153] DEBUG    root         Add our sound checkbox:
+[2023-06-07 21:01:41,155] DEBUG    root         Attempting to setup our grey buttons
+[2023-06-07 21:01:41,156] DEBUG    root         Attempting to setup our gumdrop buttons
+[2023-06-07 21:01:41,156] DEBUG    root         Attempting to set variables to display
+[2023-06-07 21:01:54,504] DEBUG    root         Loop mode ON
+[2023-06-07 21:01:54,505] DEBUG    root         Attempting to retrieve user input
+[2023-06-07 21:01:54,505] DEBUG    root         Received the following user-defined values:
+[2023-06-07 21:01:54,505] DEBUG    root         Study Hours: 	0
+[2023-06-07 21:01:54,505] DEBUG    root         Study Minutes: 	0
+[2023-06-07 21:01:54,506] DEBUG    root         Study Seconds: 	5
+[2023-06-07 21:01:54,506] DEBUG    root         Break Hours: 	0
+[2023-06-07 21:01:54,506] DEBUG    root         Break Minutes: 	0
+[2023-06-07 21:01:54,506] DEBUG    root         Break Seconds: 	5
+[2023-06-07 21:01:54,506] DEBUG    root         Study, study, now...
+[2023-06-07 21:01:54,506] DEBUG    root         In studier()- try:
+[2023-06-07 21:01:54,506] INFO     root         Study time!
+[2023-06-07 21:01:54,507] DEBUG    root         Attempting: studyTimer(buttonText)
+[2023-06-07 21:01:54,507] DEBUG    root         studyTimer(buttonText)
+[2023-06-07 21:01:54,507] DEBUG    root         Attempting to retrieve user_input for study timer
+[2023-06-07 21:01:54,507] DEBUG    root         studyTimer() loop: 5
+[2023-06-07 21:01:55,515] DEBUG    root         studyTimer() loop: 4
+[2023-06-07 21:01:56,525] DEBUG    root         studyTimer() loop: 3
+[2023-06-07 21:01:57,535] DEBUG    root         studyTimer() loop: 2
+[2023-06-07 21:01:58,544] DEBUG    root         studyTimer() loop: 1
+[2023-06-07 21:01:59,553] DEBUG    root         Checking our soundCheck variable
+[2023-06-07 21:01:59,554] DEBUG    root         soundCheck is ON
+[2023-06-07 21:01:59,577] DEBUG    root         Should have heard play bang.wav
+[2023-06-07 21:02:01,209] DEBUG    root         studyTimer() loop: 0
+[2023-06-07 21:02:02,227] DEBUG    root         Breaker, breaker!
+[2023-06-07 21:02:02,227] DEBUG    root         In breaker()- try:
+[2023-06-07 21:02:02,227] INFO     root         Break time!
+[2023-06-07 21:02:02,227] DEBUG    root         Attempting: breakTimer(buttonText)
+[2023-06-07 21:02:02,228] DEBUG    root         breakTimer(buttonText)
+[2023-06-07 21:02:02,228] DEBUG    root         Attempting to retrieve user_input for break timer
+[2023-06-07 21:02:02,228] DEBUG    root         breakTimer() loop: 5
+[2023-06-07 21:02:03,237] DEBUG    root         breakTimer() loop: 4
+[2023-06-07 21:02:04,247] DEBUG    root         breakTimer() loop: 3
+[2023-06-07 21:02:05,256] DEBUG    root         breakTimer() loop: 2
+[2023-06-07 21:02:06,265] DEBUG    root         breakTimer() loop: 1
+[2023-06-07 21:02:07,274] DEBUG    root         Checking our soundCheck variable
+[2023-06-07 21:02:07,274] DEBUG    root         soundCheck is ON
+[2023-06-07 21:02:07,276] DEBUG    root         Should have heard play bang.wav
+[2023-06-07 21:02:09,274] DEBUG    root         breakTimer() loop: 0
+[2023-06-07 21:02:10,288] DEBUG    root         Study, study, now...
+[2023-06-07 21:02:10,289] DEBUG    root         In studier()- try:
+[2023-06-07 21:02:10,289] INFO     root         Study time!
+[2023-06-07 21:02:10,289] DEBUG    root         Attempting: studyTimer(buttonText)
+[2023-06-07 21:02:10,289] DEBUG    root         studyTimer(buttonText)
+[2023-06-07 21:02:10,289] DEBUG    root         Attempting to retrieve user_input for study timer
+[2023-06-07 21:02:10,289] DEBUG    root         studyTimer() loop: 5
+[2023-06-07 21:02:11,298] DEBUG    root         studyTimer() loop: 4
+[2023-06-07 21:02:12,312] DEBUG    root         studyTimer() loop: 3
+[2023-06-07 21:02:12,325] DEBUG    root         Quitting loop mode
+[2023-06-07 21:02:13,420] DEBUG    root         Quitting loop mode
+[2023-06-07 21:02:16,870] DEBUG    root         Quitting the application
+[2023-06-07 21:06:58,433] DEBUG    root         #####################
+[2023-06-07 21:06:58,433] DEBUG    root         Debugging is on
+[2023-06-07 21:06:58,443] WARNING  playsound    playsound is relying on a python 2 subprocess. Please use `pip3 install PyObjC` if you want playsound to run more efficiently.
+[2023-06-07 21:06:58,443] DEBUG    root         rockOn: True
+[2023-06-07 21:06:58,596] DEBUG    root         Define window geometry: 310x240
+[2023-06-07 21:06:58,596] DEBUG    root         Defining window title as Study Timer
+[2023-06-07 21:06:58,596] DEBUG    root         Setting study_hour, study_minute, study_second, break_hour, break_minute, break_second as follows: 00, 15, 00, 00, 05, 00
+[2023-06-07 21:06:58,596] DEBUG    root         Initializing application defaults (as defined above)
+[2023-06-07 21:06:58,596] DEBUG    root         Resetting default values
+[2023-06-07 21:06:58,596] DEBUG    root         Let's do this!
+[2023-06-07 21:06:58,596] DEBUG    root         Add our sound checkbox:
+[2023-06-07 21:06:58,598] DEBUG    root         Attempting to setup our grey buttons
+[2023-06-07 21:06:58,598] DEBUG    root         Attempting to setup our gumdrop buttons
+[2023-06-07 21:06:58,599] DEBUG    root         Attempting to set variables to display
+[2023-06-07 21:07:11,801] DEBUG    root         Loop mode ON
+[2023-06-07 21:07:11,801] DEBUG    root         Attempting to retrieve user input
+[2023-06-07 21:07:11,801] DEBUG    root         Received the following user-defined values:
+[2023-06-07 21:07:11,801] DEBUG    root         Study Hours: 	0
+[2023-06-07 21:07:11,801] DEBUG    root         Study Minutes: 	0
+[2023-06-07 21:07:11,802] DEBUG    root         Study Seconds: 	5
+[2023-06-07 21:07:11,802] DEBUG    root         Break Hours: 	0
+[2023-06-07 21:07:11,802] DEBUG    root         Break Minutes: 	0
+[2023-06-07 21:07:11,802] DEBUG    root         Break Seconds: 	5
+[2023-06-07 21:07:11,802] DEBUG    root         Study, study, now...
+[2023-06-07 21:07:11,802] DEBUG    root         In studier()- try:
+[2023-06-07 21:07:11,802] INFO     root         Study time!
+[2023-06-07 21:07:11,802] DEBUG    root         Attempting: studyTimer(buttonText)
+[2023-06-07 21:07:11,802] DEBUG    root         studyTimer(buttonText)
+[2023-06-07 21:07:11,802] DEBUG    root         Attempting to retrieve user_input for study timer
+[2023-06-07 21:07:11,802] DEBUG    root         studyTimer() loop: 5
+[2023-06-07 21:07:12,810] DEBUG    root         studyTimer() loop: 4
+[2023-06-07 21:07:13,822] DEBUG    root         studyTimer() loop: 3
+[2023-06-07 21:07:14,832] DEBUG    root         studyTimer() loop: 2
+[2023-06-07 21:07:15,844] DEBUG    root         studyTimer() loop: 1
+[2023-06-07 21:07:16,853] DEBUG    root         Checking our soundCheck variable
+[2023-06-07 21:07:16,853] DEBUG    root         soundCheck is ON
+[2023-06-07 21:07:16,881] DEBUG    root         Should have heard play bang.wav
+[2023-06-07 21:07:19,054] DEBUG    root         studyTimer() loop: 0
+[2023-06-07 21:07:20,084] DEBUG    root         Breaker, breaker!
+[2023-06-07 21:07:20,085] DEBUG    root         In breaker()- try:
+[2023-06-07 21:07:20,085] INFO     root         Break time!
+[2023-06-07 21:07:20,085] DEBUG    root         Attempting: breakTimer(buttonText)
+[2023-06-07 21:07:20,085] DEBUG    root         breakTimer(buttonText)
+[2023-06-07 21:07:20,085] DEBUG    root         Attempting to retrieve user_input for break timer
+[2023-06-07 21:07:20,085] DEBUG    root         breakTimer() loop: 5
+[2023-06-07 21:07:21,094] DEBUG    root         breakTimer() loop: 4
+[2023-06-07 21:07:22,104] DEBUG    root         breakTimer() loop: 3
+[2023-06-07 21:07:23,113] DEBUG    root         breakTimer() loop: 2
+[2023-06-07 21:07:24,122] DEBUG    root         breakTimer() loop: 1
+[2023-06-07 21:07:25,130] DEBUG    root         Checking our soundCheck variable
+[2023-06-07 21:07:25,131] DEBUG    root         soundCheck is ON
+[2023-06-07 21:07:25,132] DEBUG    root         Should have heard play bang.wav
+[2023-06-07 21:07:26,606] DEBUG    root         breakTimer() loop: 0
+[2023-06-07 21:07:27,634] DEBUG    root         Study, study, now...
+[2023-06-07 21:07:27,635] DEBUG    root         In studier()- try:
+[2023-06-07 21:07:27,635] INFO     root         Study time!
+[2023-06-07 21:07:27,635] DEBUG    root         Attempting: studyTimer(buttonText)
+[2023-06-07 21:07:27,635] DEBUG    root         studyTimer(buttonText)
+[2023-06-07 21:07:27,635] DEBUG    root         Attempting to retrieve user_input for study timer
+[2023-06-07 21:07:27,635] DEBUG    root         studyTimer() loop: 5
+[2023-06-07 21:07:28,645] DEBUG    root         studyTimer() loop: 4
+[2023-06-07 21:07:29,658] DEBUG    root         studyTimer() loop: 3
+[2023-06-07 21:07:30,667] DEBUG    root         studyTimer() loop: 2
+[2023-06-07 21:07:31,676] DEBUG    root         studyTimer() loop: 1
+[2023-06-07 21:07:32,685] DEBUG    root         Checking our soundCheck variable
+[2023-06-07 21:07:32,686] DEBUG    root         soundCheck is ON
+[2023-06-07 21:07:32,687] DEBUG    root         Should have heard play bang.wav
+[2023-06-07 21:07:34,119] DEBUG    root         studyTimer() loop: 0
+[2023-06-07 21:07:35,135] DEBUG    root         Breaker, breaker!
+[2023-06-07 21:07:35,136] DEBUG    root         In breaker()- try:
+[2023-06-07 21:07:35,136] INFO     root         Break time!
+[2023-06-07 21:07:35,136] DEBUG    root         Attempting: breakTimer(buttonText)
+[2023-06-07 21:07:35,136] DEBUG    root         breakTimer(buttonText)
+[2023-06-07 21:07:35,136] DEBUG    root         Attempting to retrieve user_input for break timer
+[2023-06-07 21:07:35,136] DEBUG    root         breakTimer() loop: 5
+[2023-06-07 21:07:36,145] DEBUG    root         breakTimer() loop: 4
+[2023-06-07 21:07:37,174] DEBUG    root         breakTimer() loop: 3
+[2023-06-07 21:07:37,178] DEBUG    root         Quitting loop mode
+[2023-06-07 21:07:38,567] DEBUG    root         Quitting the application
+[2023-06-07 21:18:13,939] DEBUG    root         #####################
+[2023-06-07 21:18:13,939] DEBUG    root         Debugging is on
+[2023-06-07 21:18:13,939] DEBUG    root         rockOn: True
+[2023-06-07 21:18:14,090] DEBUG    root         Define window geometry: 310x240
+[2023-06-07 21:18:14,091] DEBUG    root         Defining window title as Study Timer
+[2023-06-07 21:18:14,091] DEBUG    root         Setting study_hour, study_minute, study_second, break_hour, break_minute, break_second as follows: 00, 15, 00, 00, 05, 00
+[2023-06-07 21:18:14,091] DEBUG    root         Initializing application defaults (as defined above)
+[2023-06-07 21:18:14,091] DEBUG    root         Resetting default values
+[2023-06-07 21:18:14,091] DEBUG    root         Let's do this!
+[2023-06-07 21:18:14,091] DEBUG    root         Add our sound checkbox:
+[2023-06-07 21:18:14,093] DEBUG    root         Attempting to setup our grey buttons
+[2023-06-07 21:18:14,093] DEBUG    root         Attempting to setup our gumdrop buttons
+[2023-06-07 21:18:14,094] DEBUG    root         Attempting to set variables to display
+[2023-06-07 21:18:25,511] DEBUG    root         Loop mode ON
+[2023-06-07 21:18:25,512] DEBUG    root         Attempting to retrieve user input
+[2023-06-07 21:18:25,512] DEBUG    root         Received the following user-defined values:
+[2023-06-07 21:18:25,512] DEBUG    root         Study Hours: 	0
+[2023-06-07 21:18:25,512] DEBUG    root         Study Minutes: 	0
+[2023-06-07 21:18:25,512] DEBUG    root         Study Seconds: 	5
+[2023-06-07 21:18:25,512] DEBUG    root         Break Hours: 	0
+[2023-06-07 21:18:25,512] DEBUG    root         Break Minutes: 	0
+[2023-06-07 21:18:25,512] DEBUG    root         Break Seconds: 	5
+[2023-06-07 21:18:25,512] DEBUG    root         Study, study, now...
+[2023-06-07 21:18:25,512] DEBUG    root         In studier()- try:
+[2023-06-07 21:18:25,513] INFO     root         Study time!
+[2023-06-07 21:18:25,513] DEBUG    root         Attempting: studyTimer(buttonText)
+[2023-06-07 21:18:25,513] DEBUG    root         studyTimer(buttonText)
+[2023-06-07 21:18:25,513] DEBUG    root         Attempting to retrieve user_input for study timer
+[2023-06-07 21:18:25,513] DEBUG    root         studyTimer() loop: 5
+[2023-06-07 21:18:26,520] DEBUG    root         studyTimer() loop: 4
+[2023-06-07 21:18:27,530] DEBUG    root         studyTimer() loop: 3
+[2023-06-07 21:18:28,540] DEBUG    root         studyTimer() loop: 2
+[2023-06-07 21:18:29,549] DEBUG    root         studyTimer() loop: 1
+[2023-06-07 21:18:30,558] DEBUG    root         Checking our soundCheck variable
+[2023-06-07 21:18:30,559] DEBUG    root         soundCheck is ON
+[2023-06-07 21:18:32,305] DEBUG    root         Should have heard play bang.wav
+[2023-06-07 21:18:35,314] DEBUG    root         studyTimer() loop: 0
+[2023-06-07 21:18:36,329] DEBUG    root         Breaker, breaker!
+[2023-06-07 21:18:36,329] DEBUG    root         In breaker()- try:
+[2023-06-07 21:18:36,330] INFO     root         Break time!
+[2023-06-07 21:18:36,330] DEBUG    root         Attempting: breakTimer(buttonText)
+[2023-06-07 21:18:36,330] DEBUG    root         breakTimer(buttonText)
+[2023-06-07 21:18:36,330] DEBUG    root         Attempting to retrieve user_input for break timer
+[2023-06-07 21:18:36,330] DEBUG    root         breakTimer() loop: 5
+[2023-06-07 21:18:37,340] DEBUG    root         breakTimer() loop: 4
+[2023-06-07 21:18:38,350] DEBUG    root         breakTimer() loop: 3
+[2023-06-07 21:18:39,358] DEBUG    root         breakTimer() loop: 2
+[2023-06-07 21:18:40,368] DEBUG    root         breakTimer() loop: 1
+[2023-06-07 21:18:41,378] DEBUG    root         Checking our soundCheck variable
+[2023-06-07 21:18:41,379] DEBUG    root         soundCheck is ON
+[2023-06-07 21:18:43,062] DEBUG    root         Should have heard play bang.wav
+[2023-06-07 21:18:44,497] DEBUG    root         breakTimer() loop: 0
+[2023-06-07 21:18:45,512] DEBUG    root         Study, study, now...
+[2023-06-07 21:18:45,513] DEBUG    root         In studier()- try:
+[2023-06-07 21:18:45,513] INFO     root         Study time!
+[2023-06-07 21:18:45,513] DEBUG    root         Attempting: studyTimer(buttonText)
+[2023-06-07 21:18:45,513] DEBUG    root         studyTimer(buttonText)
+[2023-06-07 21:18:45,513] DEBUG    root         Attempting to retrieve user_input for study timer
+[2023-06-07 21:18:45,513] DEBUG    root         studyTimer() loop: 5
+[2023-06-07 21:18:46,523] DEBUG    root         studyTimer() loop: 4
+[2023-06-07 21:18:47,531] DEBUG    root         studyTimer() loop: 3
+[2023-06-07 21:18:48,541] DEBUG    root         studyTimer() loop: 2
+[2023-06-07 21:18:49,550] DEBUG    root         studyTimer() loop: 1
+[2023-06-07 21:18:50,559] DEBUG    root         Checking our soundCheck variable
+[2023-06-07 21:18:50,559] DEBUG    root         soundCheck is ON
+[2023-06-07 21:18:52,242] DEBUG    root         Should have heard play bang.wav
+[2023-06-07 21:18:53,713] DEBUG    root         studyTimer() loop: 0
+[2023-06-07 21:18:54,729] DEBUG    root         Breaker, breaker!
+[2023-06-07 21:18:54,730] DEBUG    root         In breaker()- try:
+[2023-06-07 21:18:54,730] INFO     root         Break time!
+[2023-06-07 21:18:54,730] DEBUG    root         Attempting: breakTimer(buttonText)
+[2023-06-07 21:18:54,730] DEBUG    root         breakTimer(buttonText)
+[2023-06-07 21:18:54,730] DEBUG    root         Attempting to retrieve user_input for break timer
+[2023-06-07 21:18:54,730] DEBUG    root         breakTimer() loop: 5
+[2023-06-07 21:18:55,739] DEBUG    root         breakTimer() loop: 4
+[2023-06-07 21:18:56,747] DEBUG    root         breakTimer() loop: 3
+[2023-06-07 21:18:57,756] DEBUG    root         breakTimer() loop: 2
+[2023-06-07 21:18:58,767] DEBUG    root         breakTimer() loop: 1
+[2023-06-07 21:18:59,775] DEBUG    root         Checking our soundCheck variable
+[2023-06-07 21:18:59,775] DEBUG    root         soundCheck is ON
+[2023-06-07 21:19:01,459] DEBUG    root         Should have heard play bang.wav
+[2023-06-07 21:19:02,297] DEBUG    root         breakTimer() loop: 0
+[2023-06-07 21:19:03,312] DEBUG    root         Study, study, now...
+[2023-06-07 21:19:03,312] DEBUG    root         In studier()- try:
+[2023-06-07 21:19:03,312] INFO     root         Study time!
+[2023-06-07 21:19:03,313] DEBUG    root         Attempting: studyTimer(buttonText)
+[2023-06-07 21:19:03,313] DEBUG    root         studyTimer(buttonText)
+[2023-06-07 21:19:03,313] DEBUG    root         Attempting to retrieve user_input for study timer
+[2023-06-07 21:19:03,313] DEBUG    root         studyTimer() loop: 5
+[2023-06-07 21:19:04,323] DEBUG    root         studyTimer() loop: 4
+[2023-06-07 21:19:04,335] DEBUG    root         Quitting loop mode
+[2023-06-07 21:19:05,661] DEBUG    root         Quitting loop mode
+[2023-06-07 21:19:06,477] DEBUG    root         Quitting the application
+[2023-06-07 21:28:52,829] DEBUG    root         #####################
+[2023-06-07 21:28:52,829] DEBUG    root         Debugging is on
+[2023-06-07 21:28:52,829] DEBUG    root         rockOn: True
+[2023-06-07 21:28:52,982] DEBUG    root         Define window geometry: 310x240
+[2023-06-07 21:28:52,982] DEBUG    root         Defining window title as Study Timer
+[2023-06-07 21:28:52,983] DEBUG    root         Setting study_hour, study_minute, study_second, break_hour, break_minute, break_second as follows: 00, 15, 00, 00, 05, 00
+[2023-06-07 21:28:52,983] DEBUG    root         Initializing application defaults (as defined above)
+[2023-06-07 21:28:52,983] DEBUG    root         Resetting default values
+[2023-06-07 21:28:52,983] DEBUG    root         Let's do this!
+[2023-06-07 21:28:52,983] DEBUG    root         Add our sound checkbox:
+[2023-06-07 21:28:52,985] DEBUG    root         Attempting to setup our grey buttons
+[2023-06-07 21:28:52,985] DEBUG    root         Attempting to setup our gumdrop buttons
+[2023-06-07 21:28:52,986] DEBUG    root         Attempting to set variables to display
+[2023-06-07 21:29:01,421] DEBUG    root         Loop mode ON
+[2023-06-07 21:29:01,421] DEBUG    root         Attempting to retrieve user input
+[2023-06-07 21:29:01,421] DEBUG    root         Received the following user-defined values:
+[2023-06-07 21:29:01,422] DEBUG    root         Study Hours: 	0
+[2023-06-07 21:29:01,422] DEBUG    root         Study Minutes: 	15
+[2023-06-07 21:29:01,422] DEBUG    root         Study Seconds: 	0
+[2023-06-07 21:29:01,422] DEBUG    root         Break Hours: 	0
+[2023-06-07 21:29:01,422] DEBUG    root         Break Minutes: 	5
+[2023-06-07 21:29:01,422] DEBUG    root         Break Seconds: 	0
+[2023-06-07 21:29:01,422] DEBUG    root         Study, study, now...
+[2023-06-07 21:29:01,422] DEBUG    root         In studier()- try:
+[2023-06-07 21:29:01,422] INFO     root         Study time!
+[2023-06-07 21:29:01,423] DEBUG    root         Attempting: studyTimer(buttonText)
+[2023-06-07 21:29:01,423] DEBUG    root         studyTimer(buttonText)
+[2023-06-07 21:29:01,423] DEBUG    root         Attempting to retrieve user_input for study timer
+[2023-06-07 21:29:01,423] DEBUG    root         studyTimer() loop: 900
+[2023-06-07 21:29:02,430] DEBUG    root         studyTimer() loop: 899
+[2023-06-07 21:29:03,442] DEBUG    root         studyTimer() loop: 898
+[2023-06-07 21:29:04,453] DEBUG    root         studyTimer() loop: 897
+[2023-06-07 21:29:05,473] DEBUG    root         studyTimer() loop: 896
+[2023-06-07 21:29:06,484] DEBUG    root         studyTimer() loop: 895
+[2023-06-07 21:29:07,495] DEBUG    root         studyTimer() loop: 894
+[2023-06-07 21:29:08,507] DEBUG    root         studyTimer() loop: 893
+[2023-06-07 21:29:09,518] DEBUG    root         studyTimer() loop: 892
+[2023-06-07 21:29:10,524] DEBUG    root         studyTimer() loop: 891
+[2023-06-07 21:29:11,534] DEBUG    root         studyTimer() loop: 890
+[2023-06-07 21:29:12,545] DEBUG    root         studyTimer() loop: 889
+[2023-06-07 21:29:13,557] DEBUG    root         studyTimer() loop: 888
+[2023-06-07 21:29:14,569] DEBUG    root         studyTimer() loop: 887
+[2023-06-07 21:29:15,581] DEBUG    root         studyTimer() loop: 886
+[2023-06-07 21:29:16,593] DEBUG    root         studyTimer() loop: 885
+[2023-06-07 21:29:17,606] DEBUG    root         studyTimer() loop: 884
+[2023-06-07 21:29:18,617] DEBUG    root         studyTimer() loop: 883
+[2023-06-07 21:29:19,629] DEBUG    root         studyTimer() loop: 882
+[2023-06-07 21:29:20,641] DEBUG    root         studyTimer() loop: 881
+[2023-06-07 21:29:21,654] DEBUG    root         studyTimer() loop: 880
+[2023-06-07 21:29:22,665] DEBUG    root         studyTimer() loop: 879
+[2023-06-07 21:29:23,676] DEBUG    root         studyTimer() loop: 878
+[2023-06-07 21:29:24,686] DEBUG    root         studyTimer() loop: 877
+[2023-06-07 21:29:25,697] DEBUG    root         studyTimer() loop: 876
+[2023-06-07 21:29:26,705] DEBUG    root         studyTimer() loop: 875
+[2023-06-07 21:29:27,716] DEBUG    root         studyTimer() loop: 874
+[2023-06-07 21:29:28,724] DEBUG    root         studyTimer() loop: 873
+[2023-06-07 21:29:29,732] DEBUG    root         studyTimer() loop: 872
+[2023-06-07 21:29:30,744] DEBUG    root         studyTimer() loop: 871
+[2023-06-07 21:29:31,756] DEBUG    root         studyTimer() loop: 870
+[2023-06-07 21:29:32,767] DEBUG    root         studyTimer() loop: 869
+[2023-06-07 21:29:33,780] DEBUG    root         studyTimer() loop: 868
+[2023-06-07 21:29:34,793] DEBUG    root         studyTimer() loop: 867
+[2023-06-07 21:29:35,804] DEBUG    root         studyTimer() loop: 866
+[2023-06-07 21:29:36,816] DEBUG    root         studyTimer() loop: 865
+[2023-06-07 21:29:37,829] DEBUG    root         studyTimer() loop: 864
+[2023-06-07 21:29:38,841] DEBUG    root         studyTimer() loop: 863
+[2023-06-07 21:29:39,853] DEBUG    root         studyTimer() loop: 862
+[2023-06-07 21:29:40,865] DEBUG    root         studyTimer() loop: 861
+[2023-06-07 21:29:41,878] DEBUG    root         studyTimer() loop: 860
+[2023-06-07 21:29:42,890] DEBUG    root         studyTimer() loop: 859
+[2023-06-07 21:29:43,902] DEBUG    root         studyTimer() loop: 858
+[2023-06-07 21:29:44,914] DEBUG    root         studyTimer() loop: 857
+[2023-06-07 21:29:45,927] DEBUG    root         studyTimer() loop: 856
+[2023-06-07 21:29:46,939] DEBUG    root         studyTimer() loop: 855
+[2023-06-07 21:29:47,951] DEBUG    root         studyTimer() loop: 854
+[2023-06-07 21:29:48,962] DEBUG    root         studyTimer() loop: 853
+[2023-06-07 21:29:49,974] DEBUG    root         studyTimer() loop: 852
+[2023-06-07 21:29:50,985] DEBUG    root         studyTimer() loop: 851
+[2023-06-07 21:29:51,997] DEBUG    root         studyTimer() loop: 850
+[2023-06-07 21:29:53,009] DEBUG    root         studyTimer() loop: 849
+[2023-06-07 21:29:54,021] DEBUG    root         studyTimer() loop: 848
+[2023-06-07 21:29:55,033] DEBUG    root         studyTimer() loop: 847
+[2023-06-07 21:29:56,045] DEBUG    root         studyTimer() loop: 846
+[2023-06-07 21:29:57,057] DEBUG    root         studyTimer() loop: 845
+[2023-06-07 21:29:58,069] DEBUG    root         studyTimer() loop: 844
+[2023-06-07 21:29:59,082] DEBUG    root         studyTimer() loop: 843
+[2023-06-07 21:30:00,093] DEBUG    root         studyTimer() loop: 842
+[2023-06-07 21:30:01,104] DEBUG    root         studyTimer() loop: 841
+[2023-06-07 21:30:02,116] DEBUG    root         studyTimer() loop: 840
+[2023-06-07 21:30:03,128] DEBUG    root         studyTimer() loop: 839
+[2023-06-07 21:30:04,140] DEBUG    root         studyTimer() loop: 838
+[2023-06-07 21:30:05,152] DEBUG    root         studyTimer() loop: 837
+[2023-06-07 21:30:06,164] DEBUG    root         studyTimer() loop: 836
+[2023-06-07 21:30:07,177] DEBUG    root         studyTimer() loop: 835
+[2023-06-07 21:30:08,187] DEBUG    root         studyTimer() loop: 834
+[2023-06-07 21:30:09,199] DEBUG    root         studyTimer() loop: 833
+[2023-06-07 21:30:10,212] DEBUG    root         studyTimer() loop: 832
+[2023-06-07 21:30:11,224] DEBUG    root         studyTimer() loop: 831
+[2023-06-07 21:30:12,236] DEBUG    root         studyTimer() loop: 830
+[2023-06-07 21:30:13,248] DEBUG    root         studyTimer() loop: 829
+[2023-06-07 21:30:14,260] DEBUG    root         studyTimer() loop: 828
+[2023-06-07 21:30:15,272] DEBUG    root         studyTimer() loop: 827
+[2023-06-07 21:30:16,282] DEBUG    root         studyTimer() loop: 826
+[2023-06-07 21:30:17,295] DEBUG    root         studyTimer() loop: 825
+[2023-06-07 21:30:18,307] DEBUG    root         studyTimer() loop: 824
+[2023-06-07 21:30:19,319] DEBUG    root         studyTimer() loop: 823
+[2023-06-07 21:30:20,331] DEBUG    root         studyTimer() loop: 822
+[2023-06-07 21:30:21,342] DEBUG    root         studyTimer() loop: 821
+[2023-06-07 21:30:22,354] DEBUG    root         studyTimer() loop: 820
+[2023-06-07 21:30:23,366] DEBUG    root         studyTimer() loop: 819
+[2023-06-07 21:30:24,378] DEBUG    root         studyTimer() loop: 818
+[2023-06-07 21:30:25,391] DEBUG    root         studyTimer() loop: 817
+[2023-06-07 21:30:26,402] DEBUG    root         studyTimer() loop: 816
+[2023-06-07 21:30:27,409] DEBUG    root         studyTimer() loop: 815
+[2023-06-07 21:30:28,421] DEBUG    root         studyTimer() loop: 814
+[2023-06-07 21:30:29,432] DEBUG    root         studyTimer() loop: 813
+[2023-06-07 21:30:30,444] DEBUG    root         studyTimer() loop: 812
+[2023-06-07 21:30:31,450] DEBUG    root         studyTimer() loop: 811
+[2023-06-07 21:30:32,457] DEBUG    root         studyTimer() loop: 810
+[2023-06-07 21:30:33,469] DEBUG    root         studyTimer() loop: 809
+[2023-06-07 21:30:34,477] DEBUG    root         studyTimer() loop: 808
+[2023-06-07 21:30:35,489] DEBUG    root         studyTimer() loop: 807
+[2023-06-07 21:30:36,496] DEBUG    root         studyTimer() loop: 806
+[2023-06-07 21:30:37,503] DEBUG    root         studyTimer() loop: 805
+[2023-06-07 21:30:38,511] DEBUG    root         studyTimer() loop: 804
+[2023-06-07 21:30:39,523] DEBUG    root         studyTimer() loop: 803
+[2023-06-07 21:30:40,535] DEBUG    root         studyTimer() loop: 802
+[2023-06-07 21:30:41,548] DEBUG    root         studyTimer() loop: 801
+[2023-06-07 21:30:42,559] DEBUG    root         studyTimer() loop: 800
+[2023-06-07 21:30:43,571] DEBUG    root         studyTimer() loop: 799
+[2023-06-07 21:30:44,579] DEBUG    root         studyTimer() loop: 798
+[2023-06-07 21:30:45,591] DEBUG    root         studyTimer() loop: 797
+[2023-06-07 21:30:46,601] DEBUG    root         studyTimer() loop: 796
+[2023-06-07 21:30:47,612] DEBUG    root         studyTimer() loop: 795
+[2023-06-07 21:30:48,624] DEBUG    root         studyTimer() loop: 794
+[2023-06-07 21:30:49,635] DEBUG    root         studyTimer() loop: 793
+[2023-06-07 21:30:50,648] DEBUG    root         studyTimer() loop: 792
+[2023-06-07 21:30:51,660] DEBUG    root         studyTimer() loop: 791
+[2023-06-07 21:30:52,671] DEBUG    root         studyTimer() loop: 790
+[2023-06-07 21:30:53,683] DEBUG    root         studyTimer() loop: 789
+[2023-06-07 21:30:54,696] DEBUG    root         studyTimer() loop: 788
+[2023-06-07 21:30:55,708] DEBUG    root         studyTimer() loop: 787
+[2023-06-07 21:30:56,719] DEBUG    root         studyTimer() loop: 786
+[2023-06-07 21:30:57,732] DEBUG    root         studyTimer() loop: 785
+[2023-06-07 21:30:58,741] DEBUG    root         studyTimer() loop: 784
+[2023-06-07 21:30:59,750] DEBUG    root         studyTimer() loop: 783
+[2023-06-07 21:31:00,758] DEBUG    root         studyTimer() loop: 782
+[2023-06-07 21:31:01,766] DEBUG    root         studyTimer() loop: 781
+[2023-06-07 21:31:02,779] DEBUG    root         studyTimer() loop: 780
+[2023-06-07 21:31:03,791] DEBUG    root         studyTimer() loop: 779
+[2023-06-07 21:31:04,804] DEBUG    root         studyTimer() loop: 778
+[2023-06-07 21:31:05,816] DEBUG    root         studyTimer() loop: 777
+[2023-06-07 21:31:06,829] DEBUG    root         studyTimer() loop: 776
+[2023-06-07 21:31:07,840] DEBUG    root         studyTimer() loop: 775
+[2023-06-07 21:31:08,851] DEBUG    root         studyTimer() loop: 774
+[2023-06-07 21:31:09,863] DEBUG    root         studyTimer() loop: 773
+[2023-06-07 21:31:10,873] DEBUG    root         studyTimer() loop: 772
+[2023-06-07 21:31:11,885] DEBUG    root         studyTimer() loop: 771
+[2023-06-07 21:31:12,891] DEBUG    root         studyTimer() loop: 770
+[2023-06-07 21:31:13,903] DEBUG    root         studyTimer() loop: 769
+[2023-06-07 21:31:14,915] DEBUG    root         studyTimer() loop: 768
+[2023-06-07 21:31:15,927] DEBUG    root         studyTimer() loop: 767
+[2023-06-07 21:31:16,940] DEBUG    root         studyTimer() loop: 766
+[2023-06-07 21:31:17,952] DEBUG    root         studyTimer() loop: 765
+[2023-06-07 21:31:18,958] DEBUG    root         studyTimer() loop: 764
+[2023-06-07 21:31:19,970] DEBUG    root         studyTimer() loop: 763
+[2023-06-07 21:31:20,981] DEBUG    root         studyTimer() loop: 762
+[2023-06-07 21:31:21,993] DEBUG    root         studyTimer() loop: 761
+[2023-06-07 21:31:23,006] DEBUG    root         studyTimer() loop: 760
+[2023-06-07 21:31:24,018] DEBUG    root         studyTimer() loop: 759
+[2023-06-07 21:31:25,025] DEBUG    root         studyTimer() loop: 758
+[2023-06-07 21:31:26,036] DEBUG    root         studyTimer() loop: 757
+[2023-06-07 21:31:27,048] DEBUG    root         studyTimer() loop: 756
+[2023-06-07 21:31:28,057] DEBUG    root         studyTimer() loop: 755
+[2023-06-07 21:31:29,069] DEBUG    root         studyTimer() loop: 754
+[2023-06-07 21:31:30,077] DEBUG    root         studyTimer() loop: 753
+[2023-06-07 21:31:31,087] DEBUG    root         studyTimer() loop: 752
+[2023-06-07 21:31:32,098] DEBUG    root         studyTimer() loop: 751
+[2023-06-07 21:31:33,110] DEBUG    root         studyTimer() loop: 750
+[2023-06-07 21:31:34,123] DEBUG    root         studyTimer() loop: 749
+[2023-06-07 21:31:35,135] DEBUG    root         studyTimer() loop: 748
+[2023-06-07 21:31:36,142] DEBUG    root         studyTimer() loop: 747
+[2023-06-07 21:31:37,150] DEBUG    root         studyTimer() loop: 746
+[2023-06-07 21:31:38,158] DEBUG    root         studyTimer() loop: 745
+[2023-06-07 21:31:39,170] DEBUG    root         studyTimer() loop: 744
+[2023-06-07 21:31:40,179] DEBUG    root         studyTimer() loop: 743
+[2023-06-07 21:31:41,188] DEBUG    root         studyTimer() loop: 742
+[2023-06-07 21:31:42,201] DEBUG    root         studyTimer() loop: 741
+[2023-06-07 21:31:43,212] DEBUG    root         studyTimer() loop: 740
+[2023-06-07 21:31:44,237] DEBUG    root         studyTimer() loop: 739
+[2023-06-07 21:31:45,254] DEBUG    root         studyTimer() loop: 738
+[2023-06-07 21:31:46,271] DEBUG    root         studyTimer() loop: 737
+[2023-06-07 21:31:47,305] DEBUG    root         studyTimer() loop: 736
+[2023-06-07 21:31:48,315] DEBUG    root         studyTimer() loop: 735
+[2023-06-07 21:31:49,326] DEBUG    root         studyTimer() loop: 734
+[2023-06-07 21:31:50,334] DEBUG    root         studyTimer() loop: 733
+[2023-06-07 21:31:51,345] DEBUG    root         studyTimer() loop: 732
+[2023-06-07 21:32:12,718] DEBUG    root         studyTimer() loop: 731
+[2023-06-07 21:32:13,727] DEBUG    root         studyTimer() loop: 730
+[2023-06-07 21:32:14,736] DEBUG    root         studyTimer() loop: 729
+[2023-06-07 21:32:15,746] DEBUG    root         studyTimer() loop: 728
+[2023-06-07 21:32:16,755] DEBUG    root         studyTimer() loop: 727
+[2023-06-07 21:32:17,764] DEBUG    root         studyTimer() loop: 726
+[2023-06-07 21:32:18,774] DEBUG    root         studyTimer() loop: 725
+[2023-06-07 21:32:19,783] DEBUG    root         studyTimer() loop: 724
+[2023-06-07 21:32:20,791] DEBUG    root         studyTimer() loop: 723
+[2023-06-07 21:32:21,800] DEBUG    root         studyTimer() loop: 722
+[2023-06-07 21:32:22,808] DEBUG    root         studyTimer() loop: 721
+[2023-06-07 21:32:23,817] DEBUG    root         studyTimer() loop: 720
+[2023-06-07 21:32:24,826] DEBUG    root         studyTimer() loop: 719
+[2023-06-07 21:32:25,835] DEBUG    root         studyTimer() loop: 718
+[2023-06-07 21:32:26,844] DEBUG    root         studyTimer() loop: 717
+[2023-06-07 21:32:27,856] DEBUG    root         studyTimer() loop: 716
+[2023-06-07 21:32:28,867] DEBUG    root         studyTimer() loop: 715
+[2023-06-07 21:32:29,874] DEBUG    root         studyTimer() loop: 714
+[2023-06-07 21:32:30,885] DEBUG    root         studyTimer() loop: 713
+[2023-06-07 21:32:31,895] DEBUG    root         studyTimer() loop: 712
+[2023-06-07 21:32:32,905] DEBUG    root         studyTimer() loop: 711
+[2023-06-07 21:32:33,917] DEBUG    root         studyTimer() loop: 710
+[2023-06-07 21:32:34,923] DEBUG    root         studyTimer() loop: 709
+[2023-06-07 21:32:35,933] DEBUG    root         studyTimer() loop: 708
+[2023-06-07 21:32:36,942] DEBUG    root         studyTimer() loop: 707
+[2023-06-07 21:32:37,951] DEBUG    root         studyTimer() loop: 706
+[2023-06-07 21:32:38,963] DEBUG    root         studyTimer() loop: 705
+[2023-06-07 21:32:39,971] DEBUG    root         studyTimer() loop: 704
+[2023-06-07 21:32:40,981] DEBUG    root         studyTimer() loop: 703
+[2023-06-07 21:32:41,990] DEBUG    root         studyTimer() loop: 702
+[2023-06-07 21:32:42,999] DEBUG    root         studyTimer() loop: 701
+[2023-06-07 21:32:44,005] DEBUG    root         studyTimer() loop: 700
+[2023-06-07 21:32:45,014] DEBUG    root         studyTimer() loop: 699
+[2023-06-07 21:32:46,024] DEBUG    root         studyTimer() loop: 698
+[2023-06-07 21:32:47,034] DEBUG    root         studyTimer() loop: 697
+[2023-06-07 21:32:48,042] DEBUG    root         studyTimer() loop: 696
+[2023-06-07 21:32:49,053] DEBUG    root         studyTimer() loop: 695
+[2023-06-07 21:32:50,062] DEBUG    root         studyTimer() loop: 694
+[2023-06-07 21:32:51,071] DEBUG    root         studyTimer() loop: 693
+[2023-06-07 21:32:52,081] DEBUG    root         studyTimer() loop: 692
+[2023-06-07 21:32:53,090] DEBUG    root         studyTimer() loop: 691
+[2023-06-07 21:32:54,099] DEBUG    root         studyTimer() loop: 690
+[2023-06-07 21:32:55,110] DEBUG    root         studyTimer() loop: 689
+[2023-06-07 21:32:56,122] DEBUG    root         studyTimer() loop: 688
+[2023-06-07 21:32:57,134] DEBUG    root         studyTimer() loop: 687
+[2023-06-07 21:32:58,146] DEBUG    root         studyTimer() loop: 686
+[2023-06-07 21:32:59,156] DEBUG    root         studyTimer() loop: 685
+[2023-06-07 21:33:00,168] DEBUG    root         studyTimer() loop: 684
+[2023-06-07 21:33:01,178] DEBUG    root         studyTimer() loop: 683
+[2023-06-07 21:33:02,189] DEBUG    root         studyTimer() loop: 682
+[2023-06-07 21:33:03,202] DEBUG    root         studyTimer() loop: 681
+[2023-06-07 21:33:04,214] DEBUG    root         studyTimer() loop: 680
+[2023-06-07 21:33:05,222] DEBUG    root         studyTimer() loop: 679
+[2023-06-07 21:33:06,234] DEBUG    root         studyTimer() loop: 678
+[2023-06-07 21:33:07,246] DEBUG    root         studyTimer() loop: 677
+[2023-06-07 21:33:08,258] DEBUG    root         studyTimer() loop: 676
+[2023-06-07 21:33:09,269] DEBUG    root         studyTimer() loop: 675
+[2023-06-07 21:33:10,281] DEBUG    root         studyTimer() loop: 674
+[2023-06-07 21:33:11,293] DEBUG    root         studyTimer() loop: 673
+[2023-06-07 21:33:12,305] DEBUG    root         studyTimer() loop: 672
+[2023-06-07 21:33:13,313] DEBUG    root         studyTimer() loop: 671
+[2023-06-07 21:33:14,325] DEBUG    root         studyTimer() loop: 670
+[2023-06-07 21:33:15,338] DEBUG    root         studyTimer() loop: 669
+[2023-06-07 21:33:16,350] DEBUG    root         studyTimer() loop: 668
+[2023-06-07 21:33:17,362] DEBUG    root         studyTimer() loop: 667
+[2023-06-07 21:33:18,374] DEBUG    root         studyTimer() loop: 666
+[2023-06-07 21:33:19,386] DEBUG    root         studyTimer() loop: 665
+[2023-06-07 21:33:20,398] DEBUG    root         studyTimer() loop: 664
+[2023-06-07 21:33:21,410] DEBUG    root         studyTimer() loop: 663
+[2023-06-07 21:33:22,423] DEBUG    root         studyTimer() loop: 662
+[2023-06-07 21:33:23,435] DEBUG    root         studyTimer() loop: 661
+[2023-06-07 21:33:24,446] DEBUG    root         studyTimer() loop: 660
+[2023-06-07 21:33:25,458] DEBUG    root         studyTimer() loop: 659
+[2023-06-07 21:33:26,470] DEBUG    root         studyTimer() loop: 658
+[2023-06-07 21:33:27,482] DEBUG    root         studyTimer() loop: 657
+[2023-06-07 21:33:28,489] DEBUG    root         studyTimer() loop: 656
+[2023-06-07 21:33:29,502] DEBUG    root         studyTimer() loop: 655
+[2023-06-07 21:33:30,514] DEBUG    root         studyTimer() loop: 654
+[2023-06-07 21:33:31,526] DEBUG    root         studyTimer() loop: 653
+[2023-06-07 21:33:32,538] DEBUG    root         studyTimer() loop: 652
+[2023-06-07 21:33:33,550] DEBUG    root         studyTimer() loop: 651
+[2023-06-07 21:33:34,561] DEBUG    root         studyTimer() loop: 650
+[2023-06-07 21:33:35,573] DEBUG    root         studyTimer() loop: 649
+[2023-06-07 21:33:36,585] DEBUG    root         studyTimer() loop: 648
+[2023-06-07 21:33:37,597] DEBUG    root         studyTimer() loop: 647
+[2023-06-07 21:33:38,609] DEBUG    root         studyTimer() loop: 646
+[2023-06-07 21:33:39,621] DEBUG    root         studyTimer() loop: 645
+[2023-06-07 21:33:40,633] DEBUG    root         studyTimer() loop: 644
+[2023-06-07 21:33:41,645] DEBUG    root         studyTimer() loop: 643
+[2023-06-07 21:33:42,658] DEBUG    root         studyTimer() loop: 642
+[2023-06-07 21:33:43,670] DEBUG    root         studyTimer() loop: 641
+[2023-06-07 21:33:44,682] DEBUG    root         studyTimer() loop: 640
+[2023-06-07 21:33:45,693] DEBUG    root         studyTimer() loop: 639
+[2023-06-07 21:33:46,704] DEBUG    root         studyTimer() loop: 638
+[2023-06-07 21:33:47,716] DEBUG    root         studyTimer() loop: 637
+[2023-06-07 21:33:48,727] DEBUG    root         studyTimer() loop: 636
+[2023-06-07 21:33:49,739] DEBUG    root         studyTimer() loop: 635
+[2023-06-07 21:33:50,747] DEBUG    root         studyTimer() loop: 634
+[2023-06-07 21:33:51,755] DEBUG    root         studyTimer() loop: 633
+[2023-06-07 21:33:52,766] DEBUG    root         studyTimer() loop: 632
+[2023-06-07 21:33:53,777] DEBUG    root         studyTimer() loop: 631
+[2023-06-07 21:33:54,786] DEBUG    root         studyTimer() loop: 630
+[2023-06-07 21:33:55,798] DEBUG    root         studyTimer() loop: 629
+[2023-06-07 21:33:56,809] DEBUG    root         studyTimer() loop: 628
+[2023-06-07 21:33:57,820] DEBUG    root         studyTimer() loop: 627
+[2023-06-07 21:33:58,832] DEBUG    root         studyTimer() loop: 626
+[2023-06-07 21:33:59,844] DEBUG    root         studyTimer() loop: 625
+[2023-06-07 21:34:00,854] DEBUG    root         studyTimer() loop: 624
+[2023-06-07 21:34:01,862] DEBUG    root         studyTimer() loop: 623
+[2023-06-07 21:34:02,874] DEBUG    root         studyTimer() loop: 622
+[2023-06-07 21:34:03,883] DEBUG    root         studyTimer() loop: 621
+[2023-06-07 21:34:04,895] DEBUG    root         studyTimer() loop: 620
+[2023-06-07 21:34:05,905] DEBUG    root         studyTimer() loop: 619
+[2023-06-07 21:34:06,917] DEBUG    root         studyTimer() loop: 618
+[2023-06-07 21:34:07,925] DEBUG    root         studyTimer() loop: 617
+[2023-06-07 21:34:08,936] DEBUG    root         studyTimer() loop: 616
+[2023-06-07 21:34:09,948] DEBUG    root         studyTimer() loop: 615
+[2023-06-07 21:34:10,960] DEBUG    root         studyTimer() loop: 614
+[2023-06-07 21:34:11,972] DEBUG    root         studyTimer() loop: 613
+[2023-06-07 21:34:12,984] DEBUG    root         studyTimer() loop: 612
+[2023-06-07 21:34:13,994] DEBUG    root         studyTimer() loop: 611
+[2023-06-07 21:34:15,004] DEBUG    root         studyTimer() loop: 610
+[2023-06-07 21:34:16,014] DEBUG    root         studyTimer() loop: 609
+[2023-06-07 21:34:17,023] DEBUG    root         studyTimer() loop: 608
+[2023-06-07 21:34:18,030] DEBUG    root         studyTimer() loop: 607
+[2023-06-07 21:34:19,038] DEBUG    root         studyTimer() loop: 606
+[2023-06-07 21:34:20,054] DEBUG    root         studyTimer() loop: 605
+[2023-06-07 21:34:21,065] DEBUG    root         studyTimer() loop: 604
+[2023-06-07 21:34:22,077] DEBUG    root         studyTimer() loop: 603
+[2023-06-07 21:34:22,082] DEBUG    root         Quitting loop mode
+[2023-06-07 21:34:23,434] DEBUG    root         Quitting the application
+[2023-06-07 21:41:05,233] DEBUG    root         #####################
+[2023-06-07 21:41:05,233] DEBUG    root         Debugging is on
+[2023-06-07 21:41:05,233] DEBUG    root         rockOn: True
+[2023-06-07 21:41:05,322] DEBUG    root         Define window geometry: 310x240
+[2023-06-07 21:41:05,322] DEBUG    root         Defining window title as Study Timer
+[2023-06-07 21:41:05,322] DEBUG    root         Setting study_hour, study_minute, study_second, break_hour, break_minute, break_second as follows: 00, 15, 00, 00, 05, 00
+[2023-06-07 21:41:05,322] DEBUG    root         Initializing application defaults (as defined above)
+[2023-06-07 21:41:05,322] DEBUG    root         Resetting default values
+[2023-06-07 21:41:05,322] DEBUG    root         Let's do this!
+[2023-06-07 21:41:05,322] DEBUG    root         Add our sound checkbox:
+[2023-06-07 21:41:05,329] DEBUG    root         Attempting to setup our grey buttons
+[2023-06-07 21:41:05,330] DEBUG    root         Attempting to setup our gumdrop buttons
+[2023-06-07 21:41:05,331] DEBUG    root         Attempting to set variables to display
+[2023-06-07 21:41:13,217] DEBUG    root         Quitting the application
+[2023-06-07 22:05:02,995] DEBUG    root         #####################
+[2023-06-07 22:05:02,995] DEBUG    root         Debugging is on
+[2023-06-07 22:05:02,995] DEBUG    root         rockOn: True
+[2023-06-07 22:05:03,142] DEBUG    root         Define window geometry: 310x240
+[2023-06-07 22:05:03,142] DEBUG    root         Defining window title as Study Timer
+[2023-06-07 22:05:03,143] DEBUG    root         Setting study_hour, study_minute, study_second, break_hour, break_minute, break_second as follows: 00, 15, 00, 00, 05, 00
+[2023-06-07 22:05:03,143] DEBUG    root         Initializing application defaults (as defined above)
+[2023-06-07 22:05:03,143] DEBUG    root         Resetting default values
+[2023-06-07 22:05:03,143] DEBUG    root         Let's do this!
+[2023-06-07 22:05:03,143] DEBUG    root         Add our sound checkbox:
+[2023-06-07 22:05:03,145] DEBUG    root         Attempting to setup our grey buttons
+[2023-06-07 22:05:03,145] DEBUG    root         Attempting to setup our gumdrop buttons
+[2023-06-07 22:05:03,146] DEBUG    root         Attempting to set variables to display
+[2023-06-07 22:05:17,392] DEBUG    root         Loop mode ON
+[2023-06-07 22:05:17,393] DEBUG    root         Attempting to retrieve user input
+[2023-06-07 22:05:17,393] DEBUG    root         Received the following user-defined values:
+[2023-06-07 22:05:17,393] DEBUG    root         Study Hours: 	0
+[2023-06-07 22:05:17,393] DEBUG    root         Study Minutes: 	0
+[2023-06-07 22:05:17,394] DEBUG    root         Study Seconds: 	5
+[2023-06-07 22:05:17,394] DEBUG    root         Break Hours: 	0
+[2023-06-07 22:05:17,394] DEBUG    root         Break Minutes: 	0
+[2023-06-07 22:05:17,394] DEBUG    root         Break Seconds: 	5
+[2023-06-07 22:05:17,394] DEBUG    root         Study, study, now...
+[2023-06-07 22:05:17,394] DEBUG    root         In studier()- try:
+[2023-06-07 22:05:17,394] INFO     root         Study time!
+[2023-06-07 22:05:17,394] DEBUG    root         Attempting: studyTimer(buttonText)
+[2023-06-07 22:05:17,395] DEBUG    root         studyTimer(buttonText)
+[2023-06-07 22:05:17,395] DEBUG    root         Attempting to retrieve user_input for study timer
+[2023-06-07 22:05:17,395] DEBUG    root         studyTimer() loop: 5
+[2023-06-07 22:05:18,402] DEBUG    root         studyTimer() loop: 4
+[2023-06-07 22:05:19,412] DEBUG    root         studyTimer() loop: 3
+[2023-06-07 22:05:20,423] DEBUG    root         studyTimer() loop: 2
+[2023-06-07 22:05:21,435] DEBUG    root         studyTimer() loop: 1
+[2023-06-07 22:05:22,446] DEBUG    root         Checking our soundCheck variable
+[2023-06-07 22:05:22,447] DEBUG    root         soundCheck is ON
+[2023-06-07 22:05:24,198] DEBUG    root         Should have heard play bang.wav
+[2023-06-07 22:05:25,812] DEBUG    root         studyTimer() loop: 0
+[2023-06-07 22:05:26,829] DEBUG    root         Breaker, breaker!
+[2023-06-07 22:05:26,829] DEBUG    root         In breaker()- try:
+[2023-06-07 22:05:26,829] INFO     root         Break time!
+[2023-06-07 22:05:26,829] DEBUG    root         Attempting: breakTimer(buttonText)
+[2023-06-07 22:05:26,829] DEBUG    root         breakTimer(buttonText)
+[2023-06-07 22:05:26,829] DEBUG    root         Attempting to retrieve user_input for break timer
+[2023-06-07 22:05:26,829] DEBUG    root         breakTimer() loop: 5
+[2023-06-07 22:05:27,842] DEBUG    root         breakTimer() loop: 4
+[2023-06-07 22:05:27,850] DEBUG    root         Quitting the application
+[2023-06-07 22:06:22,746] DEBUG    root         #####################
+[2023-06-07 22:06:22,746] DEBUG    root         Debugging is on
+[2023-06-07 22:06:22,746] DEBUG    root         rockOn: True
+[2023-06-07 22:06:22,846] DEBUG    root         Define window geometry: 310x240
+[2023-06-07 22:06:22,846] DEBUG    root         Defining window title as Study Timer
+[2023-06-07 22:06:22,846] DEBUG    root         Setting study_hour, study_minute, study_second, break_hour, break_minute, break_second as follows: 00, 15, 00, 00, 05, 00
+[2023-06-07 22:06:22,846] DEBUG    root         Initializing application defaults (as defined above)
+[2023-06-07 22:06:22,846] DEBUG    root         Resetting default values
+[2023-06-07 22:06:22,846] DEBUG    root         Let's do this!
+[2023-06-07 22:06:22,846] DEBUG    root         Add our sound checkbox:
+[2023-06-07 22:06:22,848] DEBUG    root         Attempting to setup our grey buttons
+[2023-06-07 22:06:22,849] DEBUG    root         Attempting to setup our gumdrop buttons
+[2023-06-07 22:06:22,849] DEBUG    root         Attempting to set variables to display
+[2023-06-07 22:06:34,592] DEBUG    root         Study, study, now...
+[2023-06-07 22:06:34,593] DEBUG    root         In studier()- try:
+[2023-06-07 22:06:34,593] INFO     root         Study time!
+[2023-06-07 22:06:34,593] DEBUG    root         Attempting: studyTimer(buttonText)
+[2023-06-07 22:06:34,593] DEBUG    root         studyTimer(buttonText)
+[2023-06-07 22:06:34,593] DEBUG    root         Attempting to retrieve user_input for study timer
+[2023-06-07 22:06:34,593] DEBUG    root         studyTimer() loop: 5
+[2023-06-07 22:06:35,602] DEBUG    root         studyTimer() loop: 4
+[2023-06-07 22:06:36,612] DEBUG    root         studyTimer() loop: 3
+[2023-06-07 22:06:37,625] DEBUG    root         studyTimer() loop: 2
+[2023-06-07 22:06:38,635] DEBUG    root         studyTimer() loop: 1
+[2023-06-07 22:06:39,648] DEBUG    root         Checking our soundCheck variable
+[2023-06-07 22:06:39,649] DEBUG    root         soundCheck is ON
+[2023-06-07 22:06:41,394] DEBUG    root         Should have heard play bang.wav
+[2023-06-07 22:06:42,463] DEBUG    root         studyTimer() loop: 0
+[2023-06-07 22:06:47,592] DEBUG    root         Quitting the application
+[2023-06-08 13:32:50,360] DEBUG    root         #####################
+[2023-06-08 13:32:50,360] DEBUG    root         Debugging is on
+[2023-06-08 13:32:50,360] DEBUG    root         rockOn: True
+[2023-06-08 13:32:50,517] DEBUG    root         Define window geometry: 310x240
+[2023-06-08 13:32:50,517] DEBUG    root         Defining window title as Study Timer
+[2023-06-08 13:32:50,517] DEBUG    root         Setting study_hour, study_minute, study_second, break_hour, break_minute, break_second as follows: 00, 15, 00, 00, 05, 00
+[2023-06-08 13:32:50,517] DEBUG    root         Initializing application defaults (as defined above)
+[2023-06-08 13:32:50,517] DEBUG    root         Resetting default values
+[2023-06-08 13:32:50,517] DEBUG    root         Let's do this!
+[2023-06-08 13:32:50,517] DEBUG    root         Add our sound checkbox:
+[2023-06-08 13:32:50,519] DEBUG    root         Attempting to setup our grey buttons
+[2023-06-08 13:32:50,520] DEBUG    root         Attempting to setup our gumdrop buttons
+[2023-06-08 13:32:50,520] DEBUG    root         Attempting to set variables to display
+[2023-06-08 13:33:01,437] DEBUG    root         Study, study, now...
+[2023-06-08 13:33:01,437] DEBUG    root         In studier()- try:
+[2023-06-08 13:33:01,437] INFO     root         Study time!
+[2023-06-08 13:33:01,437] DEBUG    root         Attempting: studyTimer(buttonText)
+[2023-06-08 13:33:01,437] DEBUG    root         studyTimer(buttonText)
+[2023-06-08 13:33:01,437] DEBUG    root         Attempting to retrieve user_input for study timer
+[2023-06-08 13:33:01,438] DEBUG    root         studyTimer() loop: 5
+[2023-06-08 13:33:02,441] DEBUG    root         studyTimer() loop: 4
+[2023-06-08 13:33:03,451] DEBUG    root         studyTimer() loop: 3
+[2023-06-08 13:33:04,460] DEBUG    root         studyTimer() loop: 2
+[2023-06-08 13:33:05,469] DEBUG    root         studyTimer() loop: 1
+[2023-06-08 13:33:06,479] DEBUG    root         Checking our soundCheck variable
+[2023-06-08 13:33:10,795] DEBUG    root         studyTimer() loop: 0
+[2023-06-08 13:33:24,790] DEBUG    root         Study, study, now...
+[2023-06-08 13:33:24,790] DEBUG    root         In studier()- try:
+[2023-06-08 13:33:24,790] INFO     root         Study time!
+[2023-06-08 13:33:24,790] DEBUG    root         Attempting: studyTimer(buttonText)
+[2023-06-08 13:33:24,790] DEBUG    root         studyTimer(buttonText)
+[2023-06-08 13:33:24,791] DEBUG    root         Attempting to retrieve user_input for study timer
+[2023-06-08 13:33:24,791] DEBUG    root         studyTimer() loop: 5
+[2023-06-08 13:33:25,796] DEBUG    root         studyTimer() loop: 4
+[2023-06-08 13:33:26,805] DEBUG    root         studyTimer() loop: 3
+[2023-06-08 13:33:27,812] DEBUG    root         studyTimer() loop: 2
+[2023-06-08 13:33:28,820] DEBUG    root         studyTimer() loop: 1
+[2023-06-08 13:33:29,827] DEBUG    root         Checking our soundCheck variable
+[2023-06-08 13:33:31,432] DEBUG    root         studyTimer() loop: 0
+[2023-06-08 13:33:48,356] DEBUG    root         Quitting the application
+[2023-06-08 13:33:51,450] DEBUG    root         #####################
+[2023-06-08 13:33:51,450] DEBUG    root         Debugging is on
+[2023-06-08 13:33:51,450] DEBUG    root         rockOn: True
+[2023-06-08 13:33:51,577] DEBUG    root         Define window geometry: 310x240
+[2023-06-08 13:33:51,577] DEBUG    root         Defining window title as Study Timer
+[2023-06-08 13:33:51,577] DEBUG    root         Setting study_hour, study_minute, study_second, break_hour, break_minute, break_second as follows: 00, 15, 00, 00, 05, 00
+[2023-06-08 13:33:51,577] DEBUG    root         Initializing application defaults (as defined above)
+[2023-06-08 13:33:51,578] DEBUG    root         Resetting default values
+[2023-06-08 13:33:51,578] DEBUG    root         Let's do this!
+[2023-06-08 13:33:51,578] DEBUG    root         Add our sound checkbox:
+[2023-06-08 13:33:51,580] DEBUG    root         Attempting to setup our grey buttons
+[2023-06-08 13:33:51,580] DEBUG    root         Attempting to setup our gumdrop buttons
+[2023-06-08 13:33:51,580] DEBUG    root         Attempting to set variables to display
+[2023-06-08 13:34:01,908] DEBUG    root         Study, study, now...
+[2023-06-08 13:34:01,909] DEBUG    root         In studier()- try:
+[2023-06-08 13:34:01,909] INFO     root         Study time!
+[2023-06-08 13:34:01,909] DEBUG    root         Attempting: studyTimer(buttonText)
+[2023-06-08 13:34:01,909] DEBUG    root         studyTimer(buttonText)
+[2023-06-08 13:34:01,909] DEBUG    root         Attempting to retrieve user_input for study timer
+[2023-06-08 13:34:01,909] DEBUG    root         studyTimer() loop: 5
+[2023-06-08 13:34:02,916] DEBUG    root         studyTimer() loop: 4
+[2023-06-08 13:34:03,925] DEBUG    root         studyTimer() loop: 3
+[2023-06-08 13:34:04,934] DEBUG    root         studyTimer() loop: 2
+[2023-06-08 13:34:05,945] DEBUG    root         studyTimer() loop: 1
+[2023-06-08 13:34:06,954] DEBUG    root         Checking our soundCheck variable
+[2023-06-08 13:34:06,954] DEBUG    root         soundCheck is ON
+[2023-06-08 13:34:08,709] DEBUG    root         Should have heard play bang.wav
+[2023-06-08 13:34:10,596] DEBUG    root         studyTimer() loop: 0
+[2023-06-08 13:34:11,634] DEBUG    root         Quitting the application
